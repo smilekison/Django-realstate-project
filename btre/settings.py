@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'listings.apps.ListingsConfig',
     'realtors.apps.RealtorsConfig',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -142,3 +143,10 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+
+#Email config
+EMIL_HOST ='smtp.networkmeme.com '
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'test@networkmeme.com'
+EMAIL_HOST_PASSWORD='hello1234567890!'
+EMAIL_USE_TLS=False
